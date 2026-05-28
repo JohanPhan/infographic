@@ -146,6 +146,26 @@
     requestAnimationFrame(frame);
   }
 
+  // ----- deterministic render hook (used by the offline video exporter) -----
+  // Renders the exact visual state for an arbitrary time `t`, independent of
+  // playback, so frames can be captured one-by-one for an MP4 export.
+  window.renderAt = function (t) {
+    document.body.classList.add("render");
+    if (!startOverlay.classList.contains("hide")) {
+      startOverlay.classList.add("hide");
+      stage.setAttribute("aria-hidden", "false");
+      stage.classList.add("live");
+    }
+    const dur = DATA.duration;
+    progressFill.style.width = (100 * Math.min(t, dur) / dur) + "%";
+    timeEl.textContent = fmt(t) + " / " + fmt(dur);
+    const idx = activeEventIndex(t);
+    if (idx >= 0) {
+      const e = DATA.timeline[idx];
+      if (e.type === "fact") showFact(e); else showEnc(e);
+    }
+  };
+
   // ----- controls -----
   function begin() {
     startOverlay.classList.add("hide");
