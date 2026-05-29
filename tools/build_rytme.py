@@ -7,7 +7,7 @@ the known skip-count sequences are then assigned to those onsets in order.
 """
 import json, re
 
-w = json.load(open("/tmp/words3.json"))
+w = json.load(open("/tmp/words4.json"))
 
 def is_num(tok):
     return re.match(r"^\d", tok) is not None
@@ -42,27 +42,32 @@ SEQ = {
     4: [4, 8, 12, 16, 20, 24, 28, 32, 36],
 }
 
-def extract_beats(lo, hi):
-    """Return onset times of the count-beats inside a token window."""
-    beats = []
-    i = lo
-    while i < hi:
-        tok = w[i]["w"]
-        nxt = w[i + 1]["w"] if i + 1 < hi else ""
-        nxt2 = w[i + 2]["w"] if i + 2 < hi else ""
-        base = re.sub(r"[^0-9a-zæøå]", "", tok.lower())
-        if base in ("og", "er", "meg", "ho", ""):
-            i += 1; continue
-        # 'ti/10' + 'er' + 'meg'  => "tell med meg" (skip, no beat)
-        if base in ("10", "ti") and re.sub(r"[^a-zæøå]", "", nxt.lower()) == "er":
-            if re.sub(r"[^a-zæøå]", "", nxt2.lower()) == "meg":
-                i += 3; continue
-            # 'ti/10' + 'er' + number  => a compound number (tjueén/-fire/-sju)
-            beats.append(w[i]["s"]); i += 3; continue
-        if is_num(tok):
-            beats.append(w[i]["s"]); i += 1; continue
-        i += 1
-    return beats
+def linspace(a, b, n):
+    if n == 1:
+        return [a]
+    return [round(a + (b - a) * k / (n - 1), 2) for k in range(n)]
+
+def chorus_beats(lo, hi):
+    """Each chorus = 'Tell med meg' x2, 4 numbers, 'Tell med meg' x2, 5 numbers.
+    Use the 'tell' markers to find the two number groups, then place the 4 and 5
+    beats evenly within each group's sung span (robust to compound-number splits)."""
+    tells = [i for i in range(lo, hi) if w[i]["w"].lower().startswith("tell")]
+    nums = [i for i in range(lo, hi) if is_num(w[i]["w"])]
+    def first_num_after(idx):
+        for j in nums:
+            if j > idx:
+                return j
+        return None
+    # group1 starts after the 2nd tell; group2 after the 4th (or last) tell
+    g1s = first_num_after(tells[1]) if len(tells) >= 2 else (nums[0] if nums else lo)
+    t3 = tells[2] if len(tells) >= 3 else None
+    g2s = first_num_after(tells[3]) if len(tells) >= 4 else (first_num_after(t3) if t3 else None)
+    g1_start = w[g1s]["s"]
+    g1_end = w[t3]["s"] - 0.3 if t3 else w[g2s]["s"] - 0.3
+    g2_start = w[g2s]["s"] if g2s else g1_end + 0.6
+    last_num = max((w[j]["s"] for j in nums if w[j]["s"] >= g2_start), default=g2_start + 2.4)
+    g2_end = last_num
+    return linspace(g1_start, g1_end, 4) + linspace(g2_start, g2_end, 5)
 
 timeline = []
 for tab in (2, 3, 4):
@@ -70,21 +75,16 @@ for tab in (2, 3, 4):
         b = k + 1
         timeline.append({"t": round(t, 2), "type": "fact", "a": tab, "b": b, "c": tab * b})
     lo, hi = windows[tab]
-    beats = extract_beats(lo, hi)
+    beats = chorus_beats(lo, hi)
     seq = SEQ[tab]
-    print(f"table {tab}: {len(beats)} beats -> {[round(x,2) for x in beats]}")
-    # pad/trim to len(seq)
-    if len(beats) > len(seq):
-        beats = beats[:len(seq)]
-    while len(beats) < len(seq):
-        beats.append(beats[-1] + 0.6)
+    print(f"table {tab}: {len(beats)} beats -> {beats}")
     for idx, (on, n) in enumerate(zip(beats, seq)):
         timeline.append({"t": round(on, 2), "type": "count", "table": tab,
                          "seq": seq, "idx": idx, "n": n})
 
 timeline.sort(key=lambda e: e["t"])
-data = {"duration": 127.04, "intro": 3.5, "outro": 5.0,
-        "audio": "assets/tosifret_rytme.m4a", "timeline": timeline}
+data = {"duration": 131.8, "intro": 3.5, "outro": 5.0,
+        "audio": "assets/togangerbjelle.m4a", "timeline": timeline}
 json.dump(data, open("rytme_data.json", "w"), ensure_ascii=False, indent=0)
 with open("rytme_data.js", "w") as f:
     f.write("// Auto-generated timeline for Tosifret Rytme.\n")
