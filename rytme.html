@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tosifret Rytme · tell med meg!</title>
+  <link rel="stylesheet" href="rytme.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <!-- Start overlay -->
+  <div id="start" class="overlay">
+    <div class="start-card">
+      <div class="start-emoji">🎉 ✖️ 🎵</div>
+      <h1>Tosifret&nbsp;Rytme</h1>
+      <p>Tell med meg gjennom 2-, 3- og 4-gangen!</p>
+      <button id="startBtn" class="play-btn">▶ Spill av</button>
+    </div>
+  </div>
+
+  <!-- Intro / outro scenes -->
+  <div id="intro" class="scene">
+    <div class="scene-inner">
+      <div id="introTitle" class="big-title"></div>
+      <div id="introSub" class="scene-sub">Tell med meg! 🎶</div>
+    </div>
+  </div>
+  <div id="outro" class="scene">
+    <div class="scene-inner">
+      <div id="outroEmoji" class="scene-emoji">🎉</div>
+      <h1 id="outroTitle" class="big-title2">Bra jobba!</h1>
+      <div id="outroSub" class="scene-sub">Takk for at du talte med! 🙌</div>
+      <div id="outroCta" class="scene-cta">👍 Lik &nbsp;·&nbsp; 🔔 Abonner</div>
+    </div>
+  </div>
+
+  <!-- Main stage -->
+  <main id="stage" aria-hidden="true">
+    <header class="topbar">
+      <div id="tableBadge" class="table-badge">2-gangen</div>
+      <div id="modeBadge" class="mode-badge">✖️ Gange</div>
+    </header>
+
+    <!-- FACT view -->
+    <section id="factView" class="view">
+      <div id="factEq" class="equation">
+        <span class="pill fa">2</span>
+        <span class="op">×</span>
+        <span class="pill fb">1</span>
+        <span class="eq">=</span>
+        <span class="pill fc">2</span>
+      </div>
+      <div id="array" class="bubbles"></div>
+    </section>
+
+    <!-- CHORUS view -->
+    <section id="chorusView" class="view">
+      <div class="chorus-call">Tell med meg!</div>
+      <div id="countRow" class="count-row"></div>
+    </section>
+
+    <footer class="progress-wrap">
+      <div id="progress" class="progress"><div id="progressFill" class="progress-fill"></div></div>
+      <div id="time" class="time">0:00</div>
+    </footer>
+  </main>
+
+  <audio id="audio" preload="auto" src="assets/tosifret_rytme.m4a"></audio>
+  <script src="rytme_data.js"></script>
+  <script src="rytme.js"></script>
+</body>
+</html>
