@@ -68,10 +68,28 @@
     arrayEl.appendChild(frag);
   }
 
+  // Equations must never wrap. Measure the widest possible equation once
+  // ("9 × 10 = 90") and scale every equation by that single factor, so the
+  // result digit always stays on the same line and the size stays uniform.
+  let EQ_SCALE = null;
+  function fitEquation() {
+    if (EQ_SCALE === null) {
+      const a = faEl.textContent, b = fbEl.textContent, c = fcEl.textContent;
+      eqEl.style.transform = "none";
+      faEl.textContent = "9"; fbEl.textContent = "10"; fcEl.textContent = "90";
+      const avail = (eqEl.parentElement && eqEl.parentElement.clientWidth) || eqEl.clientWidth;
+      const w = eqEl.scrollWidth;
+      EQ_SCALE = w > 0 ? Math.min(1, (avail - 8) / w) : 1;
+      faEl.textContent = a; fbEl.textContent = b; fcEl.textContent = c;
+    }
+    eqEl.style.transform = "scale(" + EQ_SCALE + ")";
+  }
+
   function showFact(e) {
     faEl.textContent = e.a;
     fbEl.textContent = e.b;
     fcEl.textContent = e.c;
+    fitEquation();
     // retrigger pop animation
     eqEl.classList.remove("pop");
     void eqEl.offsetWidth;

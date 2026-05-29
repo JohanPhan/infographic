@@ -84,7 +84,8 @@ body{
 .equation{
   font-weight:800;letter-spacing:-2px;line-height:1;
   font-size:clamp(54px,11vw,140px);
-  display:flex;align-items:center;gap:.12em;flex-wrap:wrap;
+  display:flex;align-items:center;gap:.12em;flex-wrap:nowrap;white-space:nowrap;
+  transform-origin:left center;
 }
 .equation .op,.equation .eq{color:var(--accent-2);opacity:.85}
 .equation .fc{color:var(--accent)}
