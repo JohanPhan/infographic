@@ -9,24 +9,27 @@
 "type": "fact",
 "a": 1,
 "b": 1,
-"c": 1
+"c": 1,
+"text": "Én ganger én er én"
 },
 {
 "t": 4.68,
 "type": "fact",
 "a": 1,
 "b": 2,
-"c": 2
+"c": 2,
+"text": "Én ganger to er to"
 },
 {
 "t": 7.74,
 "type": "fact",
 "a": 1,
 "b": 3,
-"c": 3
+"c": 3,
+"text": "Én ganger tre er tre"
 },
 {
-"t": 9.14,
+"t": 10.4,
 "type": "enc",
 "text": "Se så lett det går med deg!"
 },
@@ -35,104 +38,117 @@
 "type": "fact",
 "a": 1,
 "b": 4,
-"c": 4
+"c": 4,
+"text": "Én ganger fire er fire"
 },
 {
 "t": 15.9,
 "type": "fact",
 "a": 1,
 "b": 5,
-"c": 5
+"c": 5,
+"text": "Én ganger fem er fem"
 },
 {
 "t": 18.52,
 "type": "fact",
 "a": 1,
 "b": 6,
-"c": 6
+"c": 6,
+"text": "Én ganger seks er seks"
 },
 {
-"t": 19.92,
+"t": 21.12,
 "type": "enc",
-"text": "Nå går det virkelig unna!"
+"text": "Nå går det virkelig heftig!"
 },
 {
 "t": 23.72,
 "type": "fact",
 "a": 1,
 "b": 7,
-"c": 7
+"c": 7,
+"text": "Én ganger sju er sju"
 },
 {
 "t": 25.9,
 "type": "fact",
 "a": 1,
 "b": 8,
-"c": 8
+"c": 8,
+"text": "Én ganger åtte er åtte"
 },
 {
 "t": 28.52,
 "type": "fact",
 "a": 1,
 "b": 9,
-"c": 9
+"c": 9,
+"text": "Én ganger ni er ni"
 },
 {
 "t": 31.18,
 "type": "fact",
 "a": 1,
 "b": 10,
-"c": 10
+"c": 10,
+"text": "Én ganger ti – så flott!"
 },
 {
 "t": 34.12,
 "type": "fact",
 "a": 2,
 "b": 1,
-"c": 2
+"c": 2,
+"text": "To ganger én er to"
 },
 {
 "t": 36.6,
 "type": "fact",
 "a": 2,
 "b": 2,
-"c": 4
+"c": 4,
+"text": "To ganger to er fire"
 },
 {
 "t": 39.66,
 "type": "fact",
 "a": 2,
 "b": 3,
-"c": 6
+"c": 6,
+"text": "To ganger tre er seks"
 },
 {
-"t": 41.06,
+"t": 42.15,
 "type": "enc",
-"text": "Kom igjen, vil lære mer!"
+"text": "Kom igjen, vi lærer mer!"
 },
 {
 "t": 44.64,
 "type": "fact",
 "a": 2,
 "b": 4,
-"c": 8
+"c": 8,
+"text": "To ganger fire er åtte"
 },
 {
 "t": 47.04,
 "type": "fact",
 "a": 2,
 "b": 5,
-"c": 10
+"c": 10,
+"text": "To ganger fem er ti"
 },
 {
 "t": 49.86,
 "type": "fact",
 "a": 2,
 "b": 6,
-"c": 12
+"c": 12,
+"text": "To ganger seks er tolv"
 },
 {
-"t": 51.26,
+"t": 52.5,
 "type": "enc",
 "text": "La oss telle igjen!"
 },
@@ -141,52 +157,59 @@
 "type": "fact",
 "a": 2,
 "b": 7,
-"c": 14
+"c": 14,
+"text": "To ganger sju er fjorten"
 },
 {
 "t": 57.6,
 "type": "fact",
 "a": 2,
 "b": 8,
-"c": 16
+"c": 16,
+"text": "To ganger åtte er seksten"
 },
 {
 "t": 60.0,
 "type": "fact",
 "a": 2,
 "b": 9,
-"c": 18
+"c": 18,
+"text": "To ganger ni er atten"
 },
 {
 "t": 62.82,
 "type": "fact",
 "a": 2,
 "b": 10,
-"c": 20
+"c": 20,
+"text": "To ganger ti er tjue – finfin!"
 },
 {
 "t": 68.22,
 "type": "fact",
 "a": 3,
 "b": 1,
-"c": 3
+"c": 3,
+"text": "Tre ganger én er tre"
 },
 {
 "t": 70.94,
 "type": "fact",
 "a": 3,
 "b": 2,
-"c": 6
+"c": 6,
+"text": "Tre ganger to er seks"
 },
 {
 "t": 73.56,
 "type": "fact",
 "a": 3,
 "b": 3,
-"c": 9
+"c": 9,
+"text": "Tre ganger tre er ni"
 },
 {
-"t": 74.96,
+"t": 76.15,
 "type": "enc",
 "text": "Du lærer fort, så flink og kvikk!"
 },
@@ -195,24 +218,27 @@
 "type": "fact",
 "a": 3,
 "b": 4,
-"c": 12
+"c": 12,
+"text": "Tre ganger fire er tolv"
 },
 {
 "t": 81.92,
 "type": "fact",
 "a": 3,
 "b": 5,
-"c": 15
+"c": 15,
+"text": "Tre ganger fem er femten"
 },
 {
 "t": 84.2,
 "type": "fact",
 "a": 3,
 "b": 6,
-"c": 18
+"c": 18,
+"text": "Tre ganger seks er atten"
 },
 {
-"t": 85.6,
+"t": 86.44,
 "type": "enc",
 "text": "Du kan mer enn du tror, min venn!"
 },
@@ -221,52 +247,59 @@
 "type": "fact",
 "a": 3,
 "b": 7,
-"c": 21
+"c": 21,
+"text": "Tre ganger sju er tjueén"
 },
 {
 "t": 91.36,
 "type": "fact",
 "a": 3,
 "b": 8,
-"c": 24
+"c": 24,
+"text": "Tre ganger åtte er tjuefire"
 },
 {
 "t": 94.28,
 "type": "fact",
 "a": 3,
 "b": 9,
-"c": 27
+"c": 27,
+"text": "Tre ganger ni er tjuesju"
 },
 {
 "t": 96.74,
 "type": "fact",
 "a": 3,
 "b": 10,
-"c": 30
+"c": 30,
+"text": "Tre ganger ti er tretti – hurra!"
 },
 {
 "t": 100.1,
 "type": "fact",
 "a": 4,
 "b": 1,
-"c": 4
+"c": 4,
+"text": "Fire ganger én er fire"
 },
 {
 "t": 102.4,
 "type": "fact",
 "a": 4,
 "b": 2,
-"c": 8
+"c": 8,
+"text": "Fire ganger to er åtte"
 },
 {
 "t": 105.06,
 "type": "fact",
 "a": 4,
 "b": 3,
-"c": 12
+"c": 12,
+"text": "Fire ganger tre er tolv"
 },
 {
-"t": 106.46,
+"t": 107.53,
 "type": "enc",
 "text": "Nå går vi helt i takt!"
 },
@@ -275,158 +308,178 @@
 "type": "fact",
 "a": 4,
 "b": 4,
-"c": 16
+"c": 16,
+"text": "Fire ganger fire er seksten"
 },
 {
 "t": 112.78,
 "type": "fact",
 "a": 4,
 "b": 5,
-"c": 20
+"c": 20,
+"text": "Fire ganger fem er tjue"
 },
 {
 "t": 115.56,
 "type": "fact",
 "a": 4,
 "b": 6,
-"c": 24
+"c": 24,
+"text": "Fire ganger seks er tjuefire"
 },
 {
-"t": 116.96,
+"t": 117.97,
 "type": "enc",
-"text": "Dette sitter snart helt fast!"
+"text": "Se hvor flink du er – det er sant!"
 },
 {
 "t": 120.38,
 "type": "fact",
 "a": 4,
 "b": 7,
-"c": 28
+"c": 28,
+"text": "Fire ganger sju er tjueåtte"
 },
 {
 "t": 123.2,
 "type": "fact",
 "a": 4,
 "b": 8,
-"c": 32
+"c": 32,
+"text": "Fire ganger åtte er trettito"
 },
 {
 "t": 125.68,
 "type": "fact",
 "a": 4,
 "b": 9,
-"c": 36
+"c": 36,
+"text": "Fire ganger ni er trettiseks"
 },
 {
 "t": 128.56,
 "type": "fact",
 "a": 4,
 "b": 10,
-"c": 40
+"c": 40,
+"text": "Fire ganger ti er førti – juhu!"
 },
 {
 "t": 132.82,
 "type": "fact",
 "a": 5,
 "b": 1,
-"c": 5
+"c": 5,
+"text": "Fem ganger én er fem"
 },
 {
 "t": 135.86,
 "type": "fact",
 "a": 5,
 "b": 2,
-"c": 10
+"c": 10,
+"text": "Fem ganger to er ti"
 },
 {
 "t": 138.24,
 "type": "fact",
 "a": 5,
 "b": 3,
-"c": 15
+"c": 15,
+"text": "Fem ganger tre er femten"
 },
 {
-"t": 139.64,
+"t": 140.55,
 "type": "enc",
-"text": "Vi tar en runde til!"
+"text": "Vi tar en runde igjen!"
 },
 {
 "t": 142.86,
 "type": "fact",
 "a": 5,
 "b": 4,
-"c": 20
+"c": 20,
+"text": "Fem ganger fire er tjue"
 },
 {
 "t": 145.56,
 "type": "fact",
 "a": 5,
 "b": 5,
-"c": 25
+"c": 25,
+"text": "Fem ganger fem er tjuefem"
 },
 {
 "t": 148.5,
 "type": "fact",
 "a": 5,
 "b": 6,
-"c": 30
+"c": 30,
+"text": "Fem ganger seks er tretti"
 },
 {
-"t": 149.9,
+"t": 151.14,
 "type": "enc",
-"text": "Du lærer mer for hver dag!"
+"text": "Du lærer og er kjapp!"
 },
 {
 "t": 153.78,
 "type": "fact",
 "a": 5,
 "b": 7,
-"c": 35
+"c": 35,
+"text": "Fem ganger sju er trettifem"
 },
 {
 "t": 156.36,
 "type": "fact",
 "a": 5,
 "b": 8,
-"c": 40
+"c": 40,
+"text": "Fem ganger åtte er førti"
 },
 {
 "t": 159.08,
 "type": "fact",
 "a": 5,
 "b": 9,
-"c": 45
+"c": 45,
+"text": "Fem ganger ni er førtifem"
 },
 {
 "t": 161.58,
 "type": "fact",
 "a": 5,
 "b": 10,
-"c": 50
+"c": 50,
+"text": "Fem ganger ti er femti – klart!"
 },
 {
 "t": 164.46,
 "type": "fact",
 "a": 6,
 "b": 1,
-"c": 6
+"c": 6,
+"text": "Seks ganger én er seks"
 },
 {
 "t": 167.02,
 "type": "fact",
 "a": 6,
 "b": 2,
-"c": 12
+"c": 12,
+"text": "Seks ganger to er tolv"
 },
 {
 "t": 169.6,
 "type": "fact",
 "a": 6,
 "b": 3,
-"c": 18
+"c": 18,
+"text": "Seks ganger tre er atten"
 },
 {
-"t": 171.0,
+"t": 172.21,
 "type": "enc",
 "text": "Du er helt på stell!"
 },
@@ -435,78 +488,88 @@
 "type": "fact",
 "a": 6,
 "b": 4,
-"c": 24
+"c": 24,
+"text": "Seks ganger fire er tjuefire"
 },
 {
 "t": 177.36,
 "type": "fact",
 "a": 6,
 "b": 5,
-"c": 30
+"c": 30,
+"text": "Seks ganger fem er tretti"
 },
 {
 "t": 180.18,
 "type": "fact",
 "a": 6,
 "b": 6,
-"c": 36
+"c": 36,
+"text": "Seks ganger seks er trettiseks"
 },
 {
-"t": 181.58,
+"t": 182.74,
 "type": "enc",
-"text": "Det går jo ganske stort!"
+"text": "Dette går jo ganske sporty!"
 },
 {
 "t": 185.3,
 "type": "fact",
 "a": 6,
 "b": 7,
-"c": 42
+"c": 42,
+"text": "Seks ganger sju er førtito"
 },
 {
 "t": 187.68,
 "type": "fact",
 "a": 6,
 "b": 8,
-"c": 48
+"c": 48,
+"text": "Seks ganger åtte er førtiåtte"
 },
 {
 "t": 190.58,
 "type": "fact",
 "a": 6,
 "b": 9,
-"c": 54
+"c": 54,
+"text": "Seks ganger ni er femtifire"
 },
 {
 "t": 193.2,
 "type": "fact",
 "a": 6,
 "b": 10,
-"c": 60
+"c": 60,
+"text": "Seks ganger ti er seksti – flott!"
 },
 {
 "t": 196.04,
 "type": "fact",
 "a": 7,
 "b": 1,
-"c": 7
+"c": 7,
+"text": "Sju ganger én er sju"
 },
 {
 "t": 199.06,
 "type": "fact",
 "a": 7,
 "b": 2,
-"c": 14
+"c": 14,
+"text": "Sju ganger to er fjorten"
 },
 {
 "t": 201.48,
 "type": "fact",
 "a": 7,
 "b": 3,
-"c": 21
+"c": 21,
+"text": "Sju ganger tre er tjueén"
 },
 {
-"t": 202.88,
+"t": 203.76,
 "type": "enc",
 "text": "Du er den flinkeste vi har sett!"
 },
@@ -515,24 +578,27 @@
 "type": "fact",
 "a": 7,
 "b": 4,
-"c": 28
+"c": 28,
+"text": "Sju ganger fire er tjueåtte"
 },
 {
 "t": 209.0,
 "type": "fact",
 "a": 7,
 "b": 5,
-"c": 35
+"c": 35,
+"text": "Sju ganger fem er trettifem"
 },
 {
 "t": 211.44,
 "type": "fact",
 "a": 7,
 "b": 6,
-"c": 42
+"c": 42,
+"text": "Sju ganger seks er førtito"
 },
 {
-"t": 212.84,
+"t": 214.27,
 "type": "enc",
 "text": "Du er virkelig på vei!"
 },
@@ -541,52 +607,59 @@
 "type": "fact",
 "a": 7,
 "b": 7,
-"c": 49
+"c": 49,
+"text": "Sju ganger sju er førtini"
 },
 {
 "t": 219.04,
 "type": "fact",
 "a": 7,
 "b": 8,
-"c": 56
+"c": 56,
+"text": "Sju ganger åtte er femtiseks"
 },
 {
 "t": 222.24,
 "type": "fact",
 "a": 7,
 "b": 9,
-"c": 63
+"c": 63,
+"text": "Sju ganger ni er sekstitre"
 },
 {
 "t": 224.7,
 "type": "fact",
 "a": 7,
 "b": 10,
-"c": 70
+"c": 70,
+"text": "Sju ganger ti er sytti – yeah!"
 },
 {
 "t": 227.92,
 "type": "fact",
 "a": 8,
 "b": 1,
-"c": 8
+"c": 8,
+"text": "Åtte ganger én er åtte"
 },
 {
 "t": 230.3,
 "type": "fact",
 "a": 8,
 "b": 2,
-"c": 16
+"c": 16,
+"text": "Åtte ganger to er seksten"
 },
 {
 "t": 232.74,
 "type": "fact",
 "a": 8,
 "b": 3,
-"c": 24
+"c": 24,
+"text": "Åtte ganger tre er tjuefire"
 },
 {
-"t": 234.14,
+"t": 235.34,
 "type": "enc",
 "text": "Du er rask og riktig fin!"
 },
@@ -595,24 +668,27 @@
 "type": "fact",
 "a": 8,
 "b": 4,
-"c": 32
+"c": 32,
+"text": "Åtte ganger fire er trettito"
 },
 {
 "t": 240.44,
 "type": "fact",
 "a": 8,
 "b": 5,
-"c": 40
+"c": 40,
+"text": "Åtte ganger fem er førti"
 },
 {
 "t": 243.54,
 "type": "fact",
 "a": 8,
 "b": 6,
-"c": 48
+"c": 48,
+"text": "Åtte ganger seks er førtiåtte"
 },
 {
-"t": 244.94,
+"t": 246.07,
 "type": "enc",
 "text": "Nå begynner det å bli sporty!"
 },
@@ -621,52 +697,59 @@
 "type": "fact",
 "a": 8,
 "b": 7,
-"c": 56
+"c": 56,
+"text": "Åtte ganger sju er femtiseks"
 },
 {
 "t": 251.0,
 "type": "fact",
 "a": 8,
 "b": 8,
-"c": 64
+"c": 64,
+"text": "Åtte ganger åtte er sekstifire"
 },
 {
 "t": 253.74,
 "type": "fact",
 "a": 8,
 "b": 9,
-"c": 72
+"c": 72,
+"text": "Åtte ganger ni er syttito"
 },
 {
 "t": 256.18,
 "type": "fact",
 "a": 8,
 "b": 10,
-"c": 80
+"c": 80,
+"text": "Åtte ganger ti er åtti – hurra!"
 },
 {
 "t": 262.3,
 "type": "fact",
 "a": 9,
 "b": 1,
-"c": 9
+"c": 9,
+"text": "Ni ganger én er ni"
 },
 {
 "t": 264.16,
 "type": "fact",
 "a": 9,
 "b": 2,
-"c": 18
+"c": 18,
+"text": "Ni ganger to er atten"
 },
 {
 "t": 266.78,
 "type": "fact",
 "a": 9,
 "b": 3,
-"c": 27
+"c": 27,
+"text": "Ni ganger tre er tjuesju"
 },
 {
-"t": 268.18,
+"t": 268.77,
 "type": "enc",
 "text": "Du lærer det så fint!"
 },
@@ -675,54 +758,61 @@
 "type": "fact",
 "a": 9,
 "b": 4,
-"c": 36
+"c": 36,
+"text": "Ni ganger fire er trettiseks"
 },
 {
 "t": 273.36,
 "type": "fact",
 "a": 9,
 "b": 5,
-"c": 45
+"c": 45,
+"text": "Ni ganger fem er førtifem"
 },
 {
 "t": 276.08,
 "type": "fact",
 "a": 9,
 "b": 6,
-"c": 54
+"c": 54,
+"text": "Ni ganger seks er femtifire"
 },
 {
-"t": 277.48,
+"t": 278.77,
 "type": "enc",
-"text": "Matte gjør deg glad!"
+"text": "Matte gjør deg skarp!"
 },
 {
 "t": 281.46,
 "type": "fact",
 "a": 9,
 "b": 7,
-"c": 63
+"c": 63,
+"text": "Ni ganger sju er sekstitre"
 },
 {
 "t": 283.92,
 "type": "fact",
 "a": 9,
 "b": 8,
-"c": 72
+"c": 72,
+"text": "Ni ganger åtte er syttito"
 },
 {
 "t": 286.34,
 "type": "fact",
 "a": 9,
 "b": 9,
-"c": 81
+"c": 81,
+"text": "Ni ganger ni er åttien"
 },
 {
 "t": 289.08,
 "type": "fact",
 "a": 9,
 "b": 10,
-"c": 90
+"c": 90,
+"text": "Ni ganger ti er nitti – flott igjen!"
 }
 ]
 }

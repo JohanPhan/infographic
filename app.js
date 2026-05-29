@@ -78,7 +78,7 @@
     eqEl.classList.add("pop");
 
     lyricEl.classList.remove("enc");
-    lyricEl.textContent = `${e.a} ganger ${e.b} er ${e.c}`;
+    lyricEl.textContent = e.text || `${e.a} ganger ${e.b} er ${e.c}`;
 
     renderArray(e.a, e.b);
 
