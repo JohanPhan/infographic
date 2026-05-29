@@ -13,9 +13,9 @@
     <div class="start-card">
       <div class="start-emoji">🎵 ✖️ 🔢</div>
       <h1>Gangetabell&shy;sangen</h1>
-      <p>Syng og lær gangetabellen 1&ndash;6 sammen med musikken.</p>
+      <p>Syng og lær gangetabellen 1&ndash;9 sammen med musikken.</p>
       <button id="startBtn" class="play-btn">▶ Start sangen</button>
-      <p class="hint">4 minutter · 60 gangestykker</p>
+      <p class="hint">5 minutter · 90 gangestykker</p>
     </div>
   </div>
 
@@ -55,7 +55,26 @@
     </footer>
   </main>
 
-  <audio id="audio" preload="auto" src="assets/gangertabell.m4a"></audio>
+  <!-- Intro / outro cards (used by the video exporter; hidden in the live page) -->
+  <div id="intro" class="scene">
+    <div class="scene-inner">
+      <div id="introNotes" class="float-notes"></div>
+      <div id="introKicker" class="kicker">SYNG &amp; LÆR</div>
+      <h1 id="introTitle" class="scene-title">Gangetabellen</h1>
+      <div id="introSub" class="scene-sub">1 &mdash; 9 &nbsp;·&nbsp; bli med og syng!</div>
+    </div>
+  </div>
+
+  <div id="outro" class="scene">
+    <div class="scene-inner">
+      <div id="outroEmoji" class="scene-emoji">🎉</div>
+      <h1 id="outroTitle" class="scene-title">Bra jobba!</h1>
+      <div id="outroSub" class="scene-sub">Takk for at du så på</div>
+      <div id="outroCta" class="scene-cta">👍 Lik &nbsp;·&nbsp; 🔔 Abonner</div>
+    </div>
+  </div>
+
+  <audio id="audio" preload="auto" src="assets/gangertabell_1-9.m4a"></audio>
 
   <script src="data.js"></script>
   <script src="app.js"></script>

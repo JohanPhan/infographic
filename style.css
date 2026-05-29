@@ -132,6 +132,33 @@ body{
 .progress-fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--accent-2),var(--accent));transition:width .1s linear}
 .time{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px;white-space:nowrap;font-weight:600}
 
+/* ---------- intro / outro scenes (video export) ---------- */
+.scene{
+  position:fixed;inset:0;z-index:40;display:none;place-items:center;text-align:center;
+  background:
+    radial-gradient(900px 600px at 50% 20%, hsla(var(--tableHue),75%,55%,.40), transparent 60%),
+    linear-gradient(160deg,var(--bg-1),var(--bg-2));
+}
+.scene.show{display:grid}
+.scene-inner{position:relative;padding:0 6vw}
+.kicker{
+  font-size:clamp(14px,2.2vw,22px);font-weight:800;letter-spacing:.5em;
+  color:var(--accent);text-indent:.5em;margin-bottom:18px
+}
+.scene-title{
+  font-size:clamp(40px,8.6vw,116px);line-height:.95;letter-spacing:-2px;font-weight:800;
+  text-shadow:0 20px 60px rgba(0,0,0,.4);max-width:92vw
+}
+.scene-sub{font-size:clamp(18px,3.2vw,34px);color:var(--muted);margin-top:22px;font-weight:600}
+.scene-emoji{font-size:clamp(60px,12vw,120px);margin-bottom:6px}
+.scene-cta{
+  margin-top:34px;display:inline-block;font-size:clamp(16px,2.6vw,26px);font-weight:800;color:#2d1b69;
+  background:linear-gradient(135deg,var(--accent),#ffb03f);padding:14px 32px;border-radius:999px;
+  box-shadow:0 14px 34px rgba(255,176,63,.45)
+}
+.float-notes{position:absolute;inset:-40px 0;pointer-events:none}
+.float-notes .n{position:absolute;font-size:clamp(22px,4vw,44px);opacity:.0}
+
 /* ---------- render mode (offline video export) ----------
    Freeze entrance animations so each captured frame is a clean, settled
    state; dots default to scale(0) for the live grow-in, so force them on. */
