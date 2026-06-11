@@ -1,0 +1,61 @@
+{
+ "total": 97.72,
+ "scenes": [
+  {
+   "key": "title",
+   "start": 0.6,
+   "dur": 8.84,
+   "narrStart": 0.95,
+   "narrDur": 7.34,
+   "text": "How do we find the distance between two points in three dimensional space? Let's build it up, step by step."
+  },
+  {
+   "key": "recall2d",
+   "start": 9.44,
+   "dur": 15.4,
+   "narrStart": 9.79,
+   "narrDur": 13.9,
+   "text": "Start in two dimensions. The distance between two points is the hypotenuse of a right triangle. By the Pythagorean theorem, it equals the square root of the change in x squared, plus the change in y squared."
+  },
+  {
+   "key": "to3d",
+   "start": 24.83,
+   "dur": 14.55,
+   "narrStart": 25.18,
+   "narrDur": 13.05,
+   "text": "Now we add a third axis: z. The two points differ in x, y and z. These three differences form the edges of a rectangular box, and the distance between the points is the box's space diagonal."
+  },
+  {
+   "key": "formula",
+   "start": 39.38,
+   "dur": 13.93,
+   "narrStart": 39.73,
+   "narrDur": 12.43,
+   "text": "Using the Pythagorean theorem twice gives the three dimensional distance formula. The distance equals the square root of, delta x squared, plus delta y squared, plus delta z squared."
+  },
+  {
+   "key": "example",
+   "start": 53.32,
+   "dur": 8.95,
+   "narrStart": 53.67,
+   "narrDur": 7.45,
+   "text": "Let's try an example. Take point A at one, two, three. And point B at four, six, fifteen."
+  },
+  {
+   "key": "compute",
+   "start": 62.27,
+   "dur": 21.92,
+   "narrStart": 62.62,
+   "narrDur": 20.42,
+   "text": "First, the differences. Four minus one is three. Six minus two is four. And fifteen minus three is twelve. Now square and add: nine, plus sixteen, plus one hundred and forty four, equals one hundred and sixty nine. And the square root of one hundred and sixty nine, is thirteen."
+  },
+  {
+   "key": "recap",
+   "start": 84.19,
+   "dur": 13.03,
+   "narrStart": 84.54,
+   "narrDur": 11.53,
+   "text": "So the distance from A to B is thirteen. In general, the distance is the length of the vector from A to B: the square root of the sum of the squared differences. And that's it!"
+  }
+ ]
+}
